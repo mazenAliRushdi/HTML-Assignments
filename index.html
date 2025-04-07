@@ -7,3 +7,32 @@
   </head>
   <body></body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search, File, and URL Form</title>
+  </head>
+  <body>
+    <form action="" method="get" target="_blank">
+      <label for="search">Search:</label><br />
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Enter a search word"
+        autofocus
+      /><br /><br />
+
+      <label for="file">File:</label><br />
+      <input type="file" id="file" name="file" /><br /><br />
+
+      <label for="url">URL:</label><br />
+      <input type="url" id="url" name="url" required /><br /><br />
+
+      <button type="reset">Empty</button>
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>
