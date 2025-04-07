@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Assignments</title>
+    <title>Members Data</title>
   </head>
-  <body></body>
+  <body>
+    <table width="100%" border="1" cellpadding="8">
+      <caption>
+        Members Data
+      </caption>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Avatar</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Character</th>
+          <th>Profile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ninja</td>
+          <td>
+            <img
+              src="https://via.placeholder.com/40/FF0000"
+              width="40"
+              height="40"
+              alt="Red Avatar"
+            />
+          </td>
+          <td>Osama<br />Mohamed</td>
+          <td>o1@nn.sa<br />o2@nn.sa</td>
+          <td>&copy;</td>
+          <td>
+            <a href="https://example.com/profile1" target="_blank">Profile</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://via.placeholder.com/40/0000FF"
+              width="40"
+              height="40"
+              alt="Blue Avatar"
+            />
+          </td>
+          <td>Shady<br />Nabil</td>
+          <td>s@nn.sa</td>
+          <td>TM</td>
+          <td>
+            <a href="https://example.com/profile2" target="_blank">Profile</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Monsters</td>
+          <td>
+            <img
+              src="https://via.placeholder.com/40/000000"
+              width="40"
+              height="40"
+              alt="Black Avatar"
+            />
+          </td>
+          <td>Mohamed<br />Ibrahim</td>
+          <td>m@nn.sa</td>
+          <td>&reg;</td>
+          <td>
+            <a href="https://example.com/profile3" target="_blank">Profile</a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total Members</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
