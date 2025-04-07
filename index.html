@@ -3,7 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Assignments</title>
+    <title>Form with Skills and Job</title>
   </head>
-  <body></body>
+  <body>
+    <form method="get" action="">
+      <label for="token">Token:</label><br />
+      <input
+        type="hidden"
+        id="token"
+        name="token"
+        value="b92f1fc2fce391ad7af633723afd3055"
+      /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="o@o.com"
+        readonly
+      /><br /><br />
+
+      <label for="username">Username (5-20 characters):</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="5"
+        maxlength="20"
+        required
+        autofocus
+      /><br /><br />
+
+      <fieldset>
+        <legend>Skills:</legend>
+        <input
+          type="checkbox"
+          id="skill1"
+          name="skills"
+          value="Problem Solving"
+          checked
+        />
+        <label for="skill1">Problem Solving</label><br />
+
+        <input
+          type="checkbox"
+          id="skill2"
+          name="skills"
+          value="Logical Thinking"
+        />
+        <label for="skill2">Logical Thinking</label><br />
+
+        <input
+          type="checkbox"
+          id="skill3"
+          name="skills"
+          value="Advanced Search"
+        />
+        <label for="skill3">Advanced Search</label><br />
+
+        <input type="checkbox" id="skill4" name="skills" value="Analysis" />
+        <label for="skill4">Analysis</label><br />
+
+        <input type="checkbox" id="skill5" name="skills" value="Planning" />
+        <label for="skill5">Planning</label><br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Job:</legend>
+        <input
+          type="radio"
+          id="job1"
+          name="job"
+          value="Front-End Developer"
+          checked
+        />
+        <label for="job1">Front-End Developer</label><br />
+
+        <input type="radio" id="job2" name="job" value="Back-End Developer" />
+        <label for="job2">Back-End Developer</label><br />
+
+        <input type="radio" id="job3" name="job" value="Business Analyst" />
+        <label for="job3">Business Analyst</label><br />
+
+        <input type="radio" id="job4" name="job" value="Project Manager" />
+        <label for="job4">Project Manager</label><br />
+
+        <input type="radio" id="job5" name="job" value="Scrum Master" />
+        <label for="job5">Scrum Master</label><br />
+      </fieldset>
+      <br />
+
+      <button type="reset">Empty</button>
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
