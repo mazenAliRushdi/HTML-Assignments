@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Assignments</title>
+    <title>Form with Specific Fields</title>
   </head>
-  <body></body>
+  <body>
+    <form method="get" action="">
+      <label for="token">Token:</label><br />
+      <input
+        type="hidden"
+        id="token"
+        name="token"
+        value="b92f1fc2fce391ad7af633723afd3055"
+      /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="o@o.com"
+        readonly
+      /><br /><br />
+
+      <label for="username">Username (5-20 characters):</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="5"
+        maxlength="20"
+        required
+        autofocus
+      /><br /><br />
+
+      <button type="reset">Empty</button>
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
